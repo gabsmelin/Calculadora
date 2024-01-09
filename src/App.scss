@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Oxanium:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Montserrat', cursive;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  min-height: 100vh; //ocupa 100% da tela
+}
+
+.container {
+  position: absolute;
+
+  top: 15%;
+  padding: 3%;
+  transform: translate(-50%, 0%);
+
+
+  border: 3px solid #15ff00;
+  background-color: #000;
+  color: #fff;
+
+  .visor {
+    background-color: #888;
+    width: 100%;
+    padding: 4%;
+    border-radius: 5px;
+    margin: 10% 0%;
+    text-align: end;
+  }
+ 
+
+
+  .btn {
+    color:#fff;
+    background-color: #333;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  .btn:active,.btn-largo:active,.btn-alto:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+  }
+  .btn:hover,.btn-largo:hover,.btn-alto:hover {
+    background-color: #888;
+  }
+  .btn-largo {
+    border-radius: 5px;
+    color:#fff;
+    background-color: #333;
+    width: 102px;
+    height: 50px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+  }
+  .btn-alto {
+    border-radius: 5px;
+    color:#fff;
+    background-color: #333;
+    width: 50px;
+    height: 102px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+  }
+}
